@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="button_background_color">#ff0000</color> <!-- Button background color -->
+    <color name="button_border_color">#000000</color> <!-- Button border color -->
+    <color name="insert_button_background">#FFC107</color> <!-- Insert button background color -->
+    <color name="view_button_background">#2196F3</color> <!-- View button background color -->
+    <color name="update_button_background">#4CAF50</color> <!-- Update button background color -->
+    <color name="delete_button_background">#F44336</color> <!-- Delete button background color -->
+    <color name="clear_button_background">#607D8B</color> <!-- Clear button background color -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Ass2_4">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CALCULATOR"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:textColor="@android:color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp">
+
+        <EditText
+            android:id="@+id/first_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter"
+            android:textColorHint="@color/black"/>
+
+        <EditText
+            android:id="@+id/second_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter"
+            android:textColorHint="@color/black"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:textSize="15dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="performOperation"/>
+
+    <Button
+        android:id="@+id/subtract"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="15dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="performOperation"/>
+
+    <Button
+        android:id="@+id/multiply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="*"
+        android:textSize="15dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="performOperation"/>
+
+    <Button
+        android:id="@+id/divide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="/"
+        android:textSize="15dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="performOperation"/>
+
+    <TextView
+        android:textSize="15dp"
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="ans"
+        android:textColorHint="@color/black"/>
+
+</LinearLayout>

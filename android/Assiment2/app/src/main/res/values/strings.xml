@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Ass2</string>
+    <string-array name="currency_array">
+        <item>Rupees to Dollars</item>
+        <item>Dollars to Rupees</item>
+        <item>Rupees to Pounds</item>
+        <item>Pounds to Rupees</item>
+    </string-array>
+    <string-array name="city_array">
+        <item>Select City</item>
+        <item>New York</item>
+        <item>Los Angeles</item>
+        <item>Chicago</item>
+        <!-- Add more cities as needed -->
+    </string-array>
+    <string-array name="college_array">
+        <item>ABC College</item>
+        <item>XYZ University</item>
+        <!-- Add more colleges as needed -->
+    </string-array>
+</resources>

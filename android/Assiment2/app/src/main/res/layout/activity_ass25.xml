@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".Ass2_5">
+
+    <!-- Roll No -->
+    <EditText
+        android:id="@+id/editRollNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Roll No"
+        android:inputType="number"/>
+
+    <!-- Name -->
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editRollNo"
+        android:hint="Name"/>
+
+    <!-- Mobile -->
+    <EditText
+        android:id="@+id/editMobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editName"
+        android:hint="Mobile"
+        android:inputType="phone"/>
+
+    <!-- Email -->
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editMobile"
+        android:hint="Email"
+        android:inputType="textEmailAddress"/>
+
+    <!-- City Spinner -->
+    <Spinner
+        android:id="@+id/spinnerCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editEmail"
+        android:hint="Select City"/>
+
+    <!-- CollegeName AutoCompleteTextView -->
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteCollege"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerCity"
+        android:hint="College Name"/>
+
+    <!-- Course -->
+    <EditText
+        android:id="@+id/editCourse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/autoCompleteCollege"
+        android:hint="Course"/>
+
+    <!-- Date of Birth -->
+    <EditText
+        android:id="@+id/editDOB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editCourse"
+        android:hint="Date of Birth"
+        android:inputType="date"/>
+
+    <!-- Skills CheckBoxes -->
+    <LinearLayout
+        android:id="@+id/lcb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editDOB"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/checkRead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Read"/>
+
+        <CheckBox
+            android:id="@+id/checkWrite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Write"/>
+
+        <CheckBox
+            android:id="@+id/checkSpeak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Speak"/>
+    </LinearLayout>
+
+    <!-- Gender RadioButtons -->
+    <RadioGroup
+        android:id="@+id/radioGroupGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lcb"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"/>
+
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"/>
+    </RadioGroup>
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroupGender"
+        android:text="Submit"
+        />
+</RelativeLayout>

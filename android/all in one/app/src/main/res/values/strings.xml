@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MyApplication</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string-array name="city">
+        <item>mumbai</item>
+        <item>Goa</item>
+        <item>Rajkot</item>
+        <item>USA</item>
+    </string-array>
+</resources>

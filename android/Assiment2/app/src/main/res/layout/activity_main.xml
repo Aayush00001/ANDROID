@@ -1,0 +1,80 @@
+<!-- res/layout/activity_main.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/enrollmentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enrollment" />
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/enrollmentEditText"
+        android:layout_marginTop="16dp"
+        android:hint="Name" />
+
+    <!-- EditText fields for Semester marks (Semester 1 to 6) -->
+    <EditText
+        android:id="@+id/semester1EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameEditText"
+        android:layout_marginTop="16dp"
+        android:hint="Semester 1 Marks" />
+
+    <EditText
+        android:id="@+id/semester2EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/semester1EditText"
+        android:layout_marginTop="16dp"
+        android:hint="Semester 2 Marks" />
+
+    <EditText
+        android:id="@+id/semester3EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/semester2EditText"
+        android:layout_marginTop="16dp"
+        android:hint="Semester 3 Marks" />
+
+    <EditText
+        android:id="@+id/semester4EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/semester3EditText"
+        android:layout_marginTop="16dp"
+        android:hint="Semester 4 Marks" />
+
+    <EditText
+        android:id="@+id/semester5EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/semester4EditText"
+        android:layout_marginTop="16dp"
+        android:hint="Semester 5 Marks" />
+
+    <EditText
+        android:id="@+id/semester6EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/semester5EditText"
+        android:layout_marginTop="16dp"
+        android:hint="Semester 6 Marks" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/semester6EditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Submit" />
+</RelativeLayout>
